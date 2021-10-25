@@ -24,5 +24,7 @@ resource "aws_instance" "ubuntu" {
 
   tags = {
     Name = var.instance_name
+    Jira = var.jira
+    managed_by_terraform_cloud = true
   }
 }
