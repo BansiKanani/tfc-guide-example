@@ -24,6 +24,7 @@ resource "aws_instance" "ubuntu" {
 
   associate_public_ip_address = var.associate_public_ip_address
   key_name = var.key_name
+  subnet_id = "subnet-0d10d4b17979211ac"
 
 
   tags = {
