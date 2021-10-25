@@ -17,3 +17,13 @@ variable "jira" {
   description = "Ticket for resource creation"
   default     = ""
 }
+
+variable "key_name" {
+  description = "SSH Key for remote connection"
+  default     = "ackodev"
+}
+
+variable "associate_public_ip_address" {
+  description = "true for public IP"
+  default     = false
+}

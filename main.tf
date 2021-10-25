@@ -22,6 +22,10 @@ resource "aws_instance" "ubuntu" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = var.instance_type
 
+  associate_public_ip_address = var.associate_public_ip_address
+  key_name = var.key_name
+
+
   tags = {
     Name = var.instance_name,
     jira = var.jira,
